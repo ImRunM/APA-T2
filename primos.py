@@ -31,6 +31,20 @@ def esPrimo(numero):
         if numero % prueba == 0: return False
     return True
 
+def primos(numero):
+    """
+    Devuelve una tupla con todos los números primos menores que su argumento.
+
+    >>> print(primos(10))
+    (2, 3, 5, 7)
+    """
+    return tuple(numero for numero in range(2, numero) if esPrimo(numero) == True)
+
+def descompon(numero)
+    """
+    Devuelve una tupla con la desposición en factores primos de su argumento.
+    
+    """
 
 if __name__ == "__main__":
     import doctest
